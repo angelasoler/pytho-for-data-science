@@ -8,7 +8,7 @@ def NULL_not_found(object: any) -> int:
         var_name = 'Empty'
     elif object != object:
         var_name = 'Cheese'
-    elif object == 0 and isinstance(object, bool):
+    elif object is False and isinstance(object, bool):
         var_name = 'Fake'
     elif object == 0:
         var_name = 'Zero'
