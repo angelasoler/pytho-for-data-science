@@ -19,7 +19,7 @@ def main():
     try:
         assert len(sys.argv) <= 2, "Too many arguments"
     except AssertionError as e:
-        print("Assertion Erro: {e}")
+        print("Assertion Error: {e}")
     if (len(sys.argv) == 1):
         try:
             text = input("What is the text to count?\n")
