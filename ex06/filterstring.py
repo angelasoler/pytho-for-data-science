@@ -1,6 +1,7 @@
 import sys
 from ft_filter import ft_filter
 
+
 def filter_string(s, size):
     """ Prints the list of words on s that are greater than size
 
@@ -8,10 +9,11 @@ def filter_string(s, size):
         s (string): string to filter its words
         size (int): length that the word should be greater than
     """
-    f_len = lambda string: len(string) > size
+    f_len = lambda string: len(string) > size  # noqa: E731
     word_list = [word for word in s.split()]
     ret = ft_filter(f_len, word_list)
     print(ret)
+
 
 def main():
     try:
@@ -28,5 +30,6 @@ def main():
         sys.exit()
     filter_string(sys.argv[1], n)
 
-if __name__== "__main__":
+
+if __name__ == "__main__":
     main()

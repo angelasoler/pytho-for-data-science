@@ -3,9 +3,10 @@ def ft_tqdm(lst: range) -> None:
 
         lst: iterated list
     """
-    for l in lst:
-        perc = round(l / len(lst) * 100)
+    for item in lst:
+        perc = round(item / len(lst) * 100)
         n = round(perc / 10)
         bar = ("=====" * n) + ">"
-        print(f'{perc:{3}}%|[{bar:{51}}]| {(l + 1):{3}}/{len(lst):{3}}', end='\r')
-        yield l
+        print(f'{perc:{3}}%|[{bar:{51}}]| \
+            {(item + 1):{3}}/{len(lst):{3}}', end='\r')
+        yield item

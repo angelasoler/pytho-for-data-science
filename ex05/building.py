@@ -15,11 +15,12 @@ def count_strconst(s, str_const):
         n = n + s.count(char)
     return n
 
+
 def main():
     try:
         assert len(sys.argv) <= 2, "Too many arguments"
     except AssertionError as e:
-        print("Assertion Error: {e}")
+        print(f"Assertion Error: {e}")
     if (len(sys.argv) == 1):
         try:
             text = input("What is the text to count?\n")
@@ -35,6 +36,6 @@ def main():
     print(f"{count_strconst(text, string.whitespace)} spaces")
     print(f"{count_strconst(text, string.digits)} digits")
 
+
 if __name__ == "__main__":
     main()
-
