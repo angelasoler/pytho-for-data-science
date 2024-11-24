@@ -21,7 +21,11 @@ def main():
     except AssertionError as e:
         print("Assertion Erro: {e}")
     if (len(sys.argv) == 1):
-        text = input("What is the text to count?\n")
+        try:
+            text = input("What is the text to count?\n")
+        except EOFError:
+            sys.exit()
+        text += '\n'
     else:
         text = sys.argv[1]
     print("The text contains 13 characters:")
