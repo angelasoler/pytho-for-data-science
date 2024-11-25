@@ -29,7 +29,7 @@ def main():
         text += '\n'
     else:
         text = sys.argv[1]
-    print("The text contains 13 characters:")
+    print(f"The text contains {len(text)} characters:")
     print(f"{count_strconst(text, string.ascii_uppercase)} upper letters")
     print(f"{count_strconst(text, string.ascii_lowercase)} lower letters")
     print(f"{count_strconst(text, string.punctuation)} punctuation marks")

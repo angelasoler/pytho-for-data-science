@@ -29,7 +29,7 @@ def morse_code(s):
     print(s)
 
 
-if __name__ == "__main__":
+def main():
     try:
         assert len(sys.argv) == 2, "bad arguments"
         s = ''.join(sys.argv[1][i].upper() for i in range(0, len(sys.argv[1])))
@@ -41,3 +41,7 @@ if __name__ == "__main__":
         print(f"Assertion Error: {e}")
         sys.exit()
     morse_code(s)
+
+
+if __name__ == "__main__":
+    main()
