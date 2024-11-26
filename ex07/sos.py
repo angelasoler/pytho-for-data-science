@@ -2,7 +2,6 @@ import sys
 import string
 
 
-
 def morse_code(s):
     """ prints the morse code equivalent to s
 

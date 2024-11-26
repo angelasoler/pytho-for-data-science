@@ -10,7 +10,7 @@ ft_list[1] = "World"
 ft_tuple = tuple(lst)
 ft_set.remove("tutu!")
 ft_set.add("Sao Paulo")
-ft_dict["Hello"] = "SP"
+ft_dict["Hello"] = "42 SP"
 
 print(ft_list)
 print(ft_tuple)
